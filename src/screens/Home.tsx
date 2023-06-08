@@ -16,7 +16,8 @@ import { Route } from '@interfaces/route';
 type ThemeContextType = true | false;
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const Home = ({ navigation }: StackNavigationProps) => {
-  const { activeCard } = useContext(dataWorkPlanContext);
+  const { activeCard, getItemContext, createNewItemContext, UpdateItemContext, DeleteItemContext } =
+    useContext(dataWorkPlanContext);
 
   const infoCards: Route[] = [
     {
@@ -55,6 +56,7 @@ const Home = ({ navigation }: StackNavigationProps) => {
     <View style={{ flex: 1, marginHorizontal: 20 }}>
       <Heading style={{ marginVertical: 20, marginHorizontal: 20 }}>
         Bienvenido <Heading color="emerald.400">Sergio</Heading>
+        {/* {dataUser !== null ? <Text>{dataUser}</Text> : null} */}
       </Heading>
       <ScrollView w={['100%', '300']}>
         <Box

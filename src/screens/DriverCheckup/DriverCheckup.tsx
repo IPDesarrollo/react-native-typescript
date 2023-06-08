@@ -9,6 +9,7 @@ const DriverCheckup = ({ navigation }) => {
   const { infoWorkPlan } = useContext(dataWorkPlanContext);
 
   const { work_plan_number, driver_name, driver_id } = infoWorkPlan;
+  console.log(work_plan_number, driver_name, driver_id);
   return (
     <View
       style={{

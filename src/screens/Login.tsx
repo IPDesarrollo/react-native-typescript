@@ -21,7 +21,7 @@ interface IFormInput {
 }
 
 const Login = ({ setDataLoading, dataLoading }: Props) => {
-  // const [cambio, setCambio] = useState(true);
+  const [cambio, setCambio] = useState(true);
   // const { infoWorkPlan } = useContext(dataWorkPlanContext);
   // const { getItemContext } = infoWorkPlan;
 
@@ -177,7 +177,6 @@ const Login = ({ setDataLoading, dataLoading }: Props) => {
             onPress={handleSubmit(onSubmit)}>
             Enviar
           </Button>
-          {dataUser !== null ? <Text>dataUser</Text> : null}
         </VStack>
       </Box>
     </Center>
